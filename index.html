@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>form-Card</title>
+</head>
+<body>
+  <form action="#" class="ba-form">
+    <div class="ba-header">
+      <div class="ba-logo-title">
+        <h3 class="ba-logo-title__name">Harold Finch</h3>
+        <span class="ba-logo-title__text">Your Total</span>
+      </div>
+      <h1 class="ba-header__price">$88</h1>
+    </div>
+    <fieldset class="ba-wrapper">
+      <div class="ba-credit">
+        <label class="ba-credit__label">Credit card number<input type="text" class="ba-credit__inp" required pattern="^[ 0-9999]+$" maxlength="19"></label>
+      </div>
+      <div class="ba-date">
+        <label class="ba-date__label">
+          Expiration date <br>
+          <select name="Month" class="ba-date__month">
+            <option class="ba-month__item" value="January ">Month</option>
+            <option class="ba-month__item" value="February">February</option>
+            <option class="ba-month__item" value="March">March</option>
+            <option class="ba-month__item" value="April">April</option>
+            <option class="ba-month__item" value="June">June</option>
+            <option class="ba-month__item" value="July">July</option>
+            <option class="ba-month__item" value="August">August</option>
+            <option class="ba-month__item" value="September">September</option>
+            <option class="ba-month__item" value="October">October</option>
+            <option class="ba-month__item" value="November">November</option>
+            <option class="ba-month__item" value="December">December</option>
+          </select>
+          <select name="Year" class="ba-date__year">
+            <option class="ba-date__item" value="2019">Year</option>
+            <option class="ba-date__item" value="2018">2018</option>
+            <option class="ba-date__item" value="2017">2017</option>
+            <option class="ba-date__item" value="2016">2016</option>
+            <option class="ba-date__item" value="2015">2015</option>
+            <option class="ba-date__item" value="2014">2014</option>
+            <option class="ba-date__item" value="2013">2013</option>
+          </select>
+        </label>
+      </div>
+      <div class="ba-cvv">
+        <label class="ba-cvv__label">cvv<br>
+          <input type="text" name="text" class="ba-cvv__input" required pattern="[0-9]{3}" maxlength="3">
+        </label>
+        <span class="ba-cvv__text">3 or 4 digits - <a href="#" class="ba-cvv__link">view example</a></span>
+      </div>
+      <div class="ba-feedback">
+        <input type="submit" value="Pay"class="ba-feedback__input">
+        <button class="ba-feedback__btn">Cancel rder</button>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
