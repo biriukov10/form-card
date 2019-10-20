@@ -15,7 +15,7 @@
         <h3 class="ba-logo-title__name">Harold Finch</h3>
         <span class="ba-logo-title__text">Your Total</span>
       </div>
-      <h1 class="ba-header__price">$88</h1>
+      <h2 class="ba-header__price">$88</h2>
     </div>
     <fieldset class="ba-wrapper">
       <div class="ba-credit">
@@ -49,14 +49,13 @@
         </label>
       </div>
       <div class="ba-cvv">
-        <label class="ba-cvv__label">cvv<br>
-          <input type="text" name="text" class="ba-cvv__input" required pattern="[0-9]{3}" maxlength="3">
-        </label>
+        <label class="ba-cvv__label" for="label-cvv">cvv</label>
+          <input type="text" name="text" id="label-cvv" class="ba-cvv__input" required pattern="[0-9]{3}" maxlength="3">
         <span class="ba-cvv__text">3 or 4 digits - <a href="#" class="ba-cvv__link">view example</a></span>
       </div>
       <div class="ba-feedback">
         <input type="submit" value="Pay"class="ba-feedback__input">
-        <button class="ba-feedback__btn">Cancel rder</button>
+        <button class="ba-feedback__btn">Cancel order</button>
       </div>
     </fieldset>
   </form>

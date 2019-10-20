@@ -20,8 +20,7 @@ body {
 }
 .ba-wrapper {
   width: 100%;
-  max-width: 288px;
-  margin: 0 auto;
+  padding: 0 20px;
   border: none;
 }
 .ba-header {
@@ -115,12 +114,15 @@ body {
   border-bottom: 1px solid #9eabad;
 }
 .ba-cvv__label {
+  display: block;
+  width: 15%;
   text-transform: uppercase;
   font-size: 0.825rem;
   font-weight: 700;
   color: #9eabad;
 }
 .ba-cvv__input {
+  display: inline-block;
   width: 100%;
   max-width: 92px;
   font-size: 0.8125rem;
@@ -164,6 +166,7 @@ body {
   margin-bottom: 22px;
   cursor: pointer;
   transition: .3s;
+  border: 2px solid transparent;
 }
 .ba-feedback__input:hover {
   background-color: transparent;
